@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prueba.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20" Padding="100">
+
+            <Label Text="Registro"
+                   FontSize="32"
+                   TextColor="White"
+                   HorizontalOptions="Center" />
+
+            <Frame BackgroundColor="Gray"
+                   WidthRequest="120"
+                   HeightRequest="120"
+                   CornerRadius="60"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+                <ImageButton Source="default_profile.png"
+                             BackgroundColor="Transparent"
+                             Clicked="OnProfilePictureClicked"
+                             Aspect="AspectFill" />
+            </Frame>
+
+            <Label Text="Correo electrónico:"
+                   TextColor="White"
+                   FontSize="14" />
+            <Frame CornerRadius="10" Padding="0" HasShadow="False" BackgroundColor="Gray">
+                <Entry Placeholder="Correo electrónico"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       x:Name="txtcorreoelectronico"
+                       FontSize="18" />
+            </Frame>
+
+            <Label Text="Nombre de Usuario:"
+                   TextColor="White"
+                   FontSize="14" />
+            <Frame CornerRadius="10" Padding="0" HasShadow="False" BackgroundColor="Gray">
+                <Entry Placeholder="Usuario"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                         x:Name="txtUsuarioname"
+                       FontSize="18" />
+            </Frame>
+
+
+
+            <Label Text="Contraseña:"
+                   TextColor="White"
+                   FontSize="14" />
+            <Frame CornerRadius="10" Padding="0" HasShadow="False" BackgroundColor="Gray">
+                <Entry Placeholder="Contraseña"
+                       IsPassword="True"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       x:Name="txtContra"
+                       FontSize="18" />
+            </Frame>
+            <Button Text="REGISTRARSE"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    WidthRequest="200"
+                    HeightRequest="50"
+                    CornerRadius="25"
+                    HorizontalOptions="Center"
+                    Clicked="btnRegistrarse_Clicked"/>
+
+            <Button Text="Volver al Login"
+                    BackgroundColor="#ffa31a"
+                    TextColor="White"
+                    CornerRadius="25"
+                    WidthRequest="200"
+                    HeightRequest="50" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>
